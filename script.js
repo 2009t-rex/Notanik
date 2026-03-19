@@ -52,7 +52,9 @@ poleTekstowe.addEventListener("input", () =>{
 })
 
 window.addEventListener("load", () => {
-    poleTekstowe.value += localStorage.getItem("zawartosc")
+    if(localStorage.getItem("zawartosc") != null){
+        poleTekstowe.value += localStorage.getItem("zawartosc")
+    }
 })
 
 window.addEventListener("visibilitychange", () => {
