@@ -43,8 +43,8 @@ button{
         margin-top: 10dvh;
     }
     textarea{
-    width: 70dvw;
-    height: 50dvh;
+    width: 80dvw;
+    height: 60dvh;
     }
     button{
         width: 90%;
@@ -54,5 +54,8 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h3{
+        font-size: 0.9em;
     }
 }
