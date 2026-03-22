@@ -7,8 +7,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100dvw;
-    height: 100dvh;
     background-color: rgba(0, 0, 0, 1);
     color: aliceblue;
 }
@@ -20,12 +18,13 @@ body{
     font-size: 2.5rem;
 }
 textarea{
-    width: 50dvw;
-    height: 70dvh;
+    width: 60dvw;
+    height: 65dvh;
     resize: none;
 }
 button{
-    padding: 20px 30px;
+    height: 80px;
+    width: min(300px, 100%);
     color: gold;
     background: navy;
     border: 3px dashed firebrick;
@@ -33,21 +32,24 @@ button{
     font-size: 1.5rem;
     margin: 10px 5px;
 }
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60dvw;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (orientation: portrait){
     body{
-        padding-top: 10vh;
         overflow-x: hidden;
-    }
-    .container{
-        margin-top: 10dvh;
     }
     textarea{
     width: 80dvw;
     height: 60dvh;
     }
     button{
-        width: 90%;
+        width: 100%;
     }
     .menu{
         width: 100%;
