@@ -47,7 +47,7 @@ zapis.addEventListener("click", async () =>{
     const file = new Blob([content], {type: 'text/plain'})
     link.href = URL.createObjectURL(file);
     let nazwa = fileHandler.name;
-    if(nazwa != null && content != ""){
+    if(nazwa != null && content != "" && content != null){
         link.download = `${nazwa} - kopia.txt`
         link.click()
         URL.revokeObjectURL(link.href)
